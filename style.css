@@ -6,13 +6,6 @@ body {
   color: #505962;
 }
 
-.offset:before {
-  display: block;
-  content: "";
-  height: 4rem;
-  margin-top: -4rem;
-}
-
 /*--- Navigation ---*/
 
 .navbar {
@@ -84,6 +77,10 @@ body {
   margin: 1.5rem auto;
   padding-top: 2rem;
 }
+#college {
+  overflow: hidden;
+  background: #fff;
+}
 
 .narrow h1 {
   font-size: 2.4rem;
@@ -149,9 +146,13 @@ h3.heading {
 
 /*--- Fraternity Section ---*/
 
-.fixed {
-  background-image: url(img/sigtaued.png);
+#fraternity {
+  background-image: url(img/sigtauedd.png);
   z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .dark {
@@ -188,16 +189,22 @@ blockquote .svg-inline--fa {
   border-top: 0.3rem solid #aa93e9;
   width: 50%;
 }
-
+.resume-white {
+  overflow: hidden;
+  background: #fff;
+}
 /*--- Contact Section ---*/
 
 footer {
-  background-color: #40474e;
-  color: white;
-  padding: 2rem 0 2rem;
-  margin-top: 1rem;
+	background-color: #40474e;
+	color: white;
+	padding: 2rem 0 2rem;
+	margin-top: 1rem;
 }
-
+.footer-dark {
+	overflow: hidden !important;
+	background: #40474e;
+}
 footer img {
   height: 3rem;
   margin: 1.5rem 0;
@@ -221,6 +228,8 @@ hr.socket {
   border-top: 0.2rem solid #666b71;
   margin-top: 3rem;
 }
+
+
 
 /*--- Media Queries ---*/
 
@@ -255,6 +264,9 @@ hr.socket {
     display: block;
     margin: 0 auto;
   }
+  footer img {
+	height: 2rem;
+}
 }
 
 /*============ BOOTSTRAP BREAK POINTS:
