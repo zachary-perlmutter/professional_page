@@ -31,12 +31,18 @@ body {
 
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #aa93e9;
+  /* blue was #1452f4 */
+  color: #429ff8;
 }
 
 /*--- Landing Page ---*/
 .home-inner {
-  background-image: url(img/ocean.png);
+  /* = ( 1080  / 1920 ) x 100 */
+  /*padding-bottom: 56.25%;*/
+  background-image: url(img/devops.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .caption {
@@ -77,8 +83,10 @@ body {
   margin: 1.5rem auto;
   padding-top: 2rem;
 }
+
 #college {
   overflow: hidden;
+  /* was #ffffff */
   background: #fff;
 }
 
@@ -94,13 +102,13 @@ body {
   padding: 0.6rem 1.2rem;
   margin: 1rem;
   color: white;
-  background-color: #aa93e9;
-  border-color: #aa93e9;
+  background-color: #429ff8;
+  border-color: #429ff8;
 }
 
 .btn-secondary:hover {
-  background-color: #7f69bd;
-  border-color: #7f69bd;
+  background-color: #429ff8;
+  border-color: #429ff8;
 }
 
 .uml img {
@@ -126,12 +134,13 @@ h3.heading {
 .heading-underline {
   width: 3rem;
   height: 0.2rem;
-  background-color: #aa93e9;
+  /* Old color purple: #aa93e9 */
+  background-color: #429ff8;
   margin: 0 auto 2rem;
 }
 
 .feature svg.svg-inline--fa {
-  color: #aa93e9;
+  color: #429ff8;
 }
 
 .feature h3 {
@@ -181,30 +190,35 @@ blockquote {
 }
 
 blockquote .svg-inline--fa {
-  color: #aa93e9;
+  color: #429ff8;
   margin: 1rem;
 }
 
 .resume-hr {
-  border-top: 0.3rem solid #aa93e9;
+  border-top: 0.3rem solid #429ff8;
   width: 50%;
 }
+
 .resume-white {
   overflow: hidden;
-  background: #fff;
+  background: #E9ECEF;
 }
+
 /*--- Contact Section ---*/
 
 footer {
-	background-color: #40474e;
-	color: white;
-	padding: 2rem 0 2rem;
-	margin-top: 1rem;
+  background-color: #191919;
+  color: white;
+  padding: 2rem 0 2rem;
+  margin-top: 1rem;
 }
+
 .footer-dark {
-	overflow: hidden !important;
-	background: #40474e;
+  overflow: hidden !important;
+  /* was #40474e */
+  background: #191919;
 }
+
 footer img {
   height: 3rem;
   margin: 1.5rem 0;
@@ -220,12 +234,12 @@ footer svg.svg-inline--fa {
 }
 
 footer svg.svg-inline--fa:hover {
-  color: #aa93e9 !important;
+  color: #429ff8 !important;
 }
 
 hr.socket {
   width: 100%;
-  border-top: 0.2rem solid #666b71;
+  border-top: 0.2rem solid #191919;
   margin-top: 3rem;
 }
 
@@ -264,9 +278,10 @@ hr.socket {
     display: block;
     margin: 0 auto;
   }
+
   footer img {
-	height: 2rem;
-}
+    height: 2rem;
+  }
 }
 
 /*============ BOOTSTRAP BREAK POINTS:
